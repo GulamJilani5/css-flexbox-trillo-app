@@ -1,0 +1,40 @@
+### solved npm install error(if occurred)
+If anyone in 2022 above have a problem related to "npm install" command, 
+here's what I do to resolve it. First you need to remove all devDependencies 
+line code in package.json and then install it again via command line in vscode.
+npm i autoprefixer concat node-sass npm-run-all postcss-cli live-server --save-dev
+After that you can run npm run start again
+
+
+## Defining project settings and custom properties
+  09m 45s,  background-repeat: no-repeat;
+
+## Building the overall layout
+  -4m 08s, max-width:120rem - 1200px if we have enought space, if view port width is less 
+           than max-width will occupy 100% of the view port width.
+  -4m 22s,  margin: 8rem auto - centering a div inside it's parent, in my case parent is body.
+  -9m 2s,  flex: 0 0 18% - allowing to occupy the 18% of the width.
+  -10m 36s,  flex: 1 - allowing to occupy remaining space.
+
+## Building the header - Part 2
+   -7m 52s - Placing the magnifying searching icon on top of the search input field.
+
+## Building the header - Part 3
+   -3m 0s - How to place one flex item, out of many, to occupy the full height of the flex container.
+            Easier but sometimes forget how to do because we already placed items into center.
+
+   -9m 32s - Centering a text itself based on it's height and width itself.
+     1) display: flex;
+        align-items: center;
+        justify-content: center;
+     2) // display: grid;
+       // place-items: center;
+  -10m 18s - How to create proper circle
+
+## Building the navigation - Part 1
+  -8m 20s - Beautiful use case of the flex direction column.
+  -2m 8s -  fill property of the svg icon with currentColor(color of the current color or the parent elements)
+  -2m 8s -  animation on hover with pseudo elements
+  -9m 7s -  transform origin property.
+  -10m 30s - transition property will have different settings for different property.
+             and animation speed with cubic-bezier.
