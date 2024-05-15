@@ -38,3 +38,57 @@ After that you can run npm run start again
   -9m 7s -  transform origin property.
   -10m 30s - transition property will have different settings for different property.
              and animation speed with cubic-bezier.
+
+## Building the hotel overview - Part 1
+   -2m 30s - How to make responsive images(images fluids). 
+             img is inline element and make it block element to avoiding small space underneath the image.
+   -11m 30s - sometimes margin-right:auto or margin-left:auto more appropriately fit with flexbox for adjusting spaces
+              instead of flex:1. (margin-right: auto; // Or we set to margin-left:auto to "&__location") 
+
+## Building the hotel overview - Part 2
+   -2m 12s - svg elements behave like inline elements. we can remove by using line height and fontsize to 0.
+             But the simple way is to make a parent element a flexbox. So svg icons will have the exact same height
+             as it's content. 
+   -4m 28s - ***Required more understanding of the fontsize inehrited.
+   -5m 09s - ## Building the navigation - Part 1 -2m 8s -  fill property of the svg icon with 
+                                          currentColor(color of the current color or the parent elements).
+          -  currentColor helps to make the text and border the same color in hover as well.
+   -6m 30s - ***Required to understanding more.
+              background-color: transparent - to different background color on different button. 
+
+## Builidng the description section - Part 1
+   -11m 43s - Setting font size to the parent(container element) and child elements will adopt them accordingly
+
+## Builidng the description section - Part 2
+   -1m 10s - :not(:last-of-type) vs :not(:last-child)
+   -3m 20s - Amazing use case of the flex-wrap and flex property of the flexbox.
+   -6m 68s - How to use svg image in our css with pseudo element with background-image(Unable to chnage the color 
+            of the icon) vs mask-image(It can chang the color of the icon)
+   -15m 20s - Images are on top of each others, sliding overlapping.
+   -16m 45s - box sizing can be removed for particular box.
+## Builidng the user reviews section
+   -1m 0s - New css tags or elements like - <figure></figure>, <blockquote></blockquote> and <figcaption></figcaption>
+   -10m 58s - Using psuedo element to place quotation marks
+   -11m 32s - We can use html entity in css but little different way.
+   -14m 44s - font family "Open Sans" is not very fit light quotes so we used "sans-serif"
+   -1m 44s - ***Not very properly understand
+   -19m 30s - Really great use of the flexbox and changing it's flex direction for centering multiple components
+   
+   
+## Builidng the CTA section
+   -6m 18s - span is inline element, in order apply padding we must make it inline-block element.
+   -5m 09s - A very good understanding of the positioning with tranisition, transform and animation.
+   -14m 52s - transition does not work for the background images.
+   -5m 09s -
+## Writing Media Queries - Part 1
+   -6m 58s - using max-width and width together, needs to understand it more better why doing those steps
+   -13m 55s - How to make all the flex items to occupy the full width and equally divide the space to the child items.
+   -14m 52s - Using the justify-container to center the content with really usefull for future.
+   -5m 09s - 
+## Writing Media Queries - Part 2
+   -12m 51s - A very good use case of the 'align-content' in flexbox.
+   -10m 16s - Beautiful use case for the 'order' property in flexbox.
+   -11m 03s - Good use case of the flex-wrap:wrap in flexbox.
+   -5m 09s -  
+## Wrapping up the trillo project: final considerations.
+  -4m 3s - mask image property was not working in older firefox

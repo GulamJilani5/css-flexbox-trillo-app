@@ -1,42 +1,100 @@
-.container{
-   max-width: 120rem;
-   margin: 8rem auto;
-   background-color: var(--color-grey-light-1);
-   box-shadow: var(--shadow-dark);
-   min-height: 50rem;
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+
+  @media screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
-.header{
-    font-size: 1.4rem;
-    height: 7rem;
-    background-color: #fff;
-    border-bottom: var(--color-grey-light-2);
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: $bp-smallest) {
+    height: 11rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
-.content{
-   display: flex;
-}
+.content {
+  display: flex;
 
-.sidebar{
-    background-color: var(--color-grey-dark-1);
-    flex: 0 0 18%;
-
-    display: flex;
+  @media screen and (max-width: $bp-medium) {
     flex-direction: column;
-    justify-content: space-between;
+  }
 }
 
-.hotel-view{
-    background-color: #fff;
-    // testing pursposes
-    background-color: #d4d410;
-    height: 80rem;
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
 
-
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.hotel-view {
+  background-color: #fff;
+  // FOR TESTING
+  background-color: #d4d410;
+  // height: 80rem; // We don't fix the height of the box but content will decide the height of the box.
+
+  flex: 1;
+}
+
+.detail {
+  // background-color: red;
+  background-color: var(--color-grey-light-1);
+  display: flex;
+  // gap: 4.5rem;
+  padding: 4.5rem;
+  border-bottom: var(--line);
+  font-size: 1.4rem; //description and user-reviews will inherit this font size
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+  @media screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  // background-color: blue;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  font-size: 1.4rem;
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 2rem;
+  }
+  @media screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.user-reviews {
+  // background-color: aqua;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
